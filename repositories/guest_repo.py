@@ -1,4 +1,5 @@
 """Репозиторий гостей."""
+
 from models.guest import Guest
 
 

@@ -1,4 +1,5 @@
 """Модель дополнительной услуги."""
+
 from dataclasses import dataclass
 
 

@@ -1,8 +1,7 @@
 """Точка входа приложения «Гостиница»."""
 
-from flask import Flask
-
 from core.config import Config
+from flask import Flask
 
 
 def create_app(config: type[Config] = Config) -> Flask:

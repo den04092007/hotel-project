@@ -1,4 +1,5 @@
 """Модель номера."""
+
 from dataclasses import dataclass
 
 
@@ -10,6 +11,7 @@ class Room:
     capacity: int
     price_per_night: float
     status: str = "free"
+
     def __eq__(self, other: object) -> bool:
         return isinstance(other, Room) and self.id == other.id
 

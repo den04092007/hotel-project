@@ -1,4 +1,5 @@
 """Тесты для модуля rooms."""
+
 from models.room import Room
 
 

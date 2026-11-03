@@ -1,4 +1,5 @@
 """Репозиторий номеров."""
+
 from models.room import Room
 
 
