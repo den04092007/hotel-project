@@ -1,4 +1,5 @@
 """Подключение к БД."""
+
 import sqlite3
 from contextlib import contextmanager
 

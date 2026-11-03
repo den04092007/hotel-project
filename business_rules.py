@@ -1,4 +1,5 @@
 """Бизнес-правила предметной области «Гостиница» (вариант 5)."""
+
 from dataclasses import dataclass
 from datetime import date
 from typing import List
@@ -13,8 +14,9 @@ class Booking:
     guest_age: int
 
 
-def br_01_no_overlap(room_id: int, check_in: date, check_out: date,
-                     existing_bookings: List[Booking]) -> bool:
+def br_01_no_overlap(
+    room_id: int, check_in: date, check_out: date, existing_bookings: List[Booking]
+) -> bool:
     """BR-01: нет пересечения броней."""
     for b in existing_bookings:
         if b.room_id != room_id:
@@ -24,8 +26,9 @@ def br_01_no_overlap(room_id: int, check_in: date, check_out: date,
     return True
 
 
-def br_03_total_cost(nights: int, price_per_night: float,
-                     services_cost: float = 0.0) -> float:
+def br_03_total_cost(
+    nights: int, price_per_night: float, services_cost: float = 0.0
+) -> float:
     """BR-03: стоимость = суток × тариф + услуги."""
     if nights < 0:
         raise ValueError("nights must be >= 0")
@@ -34,8 +37,9 @@ def br_03_total_cost(nights: int, price_per_night: float,
     return round(nights * price_per_night + services_cost, 2)
 
 
-def br_04_cancellation_fee(check_in: date, cancel_date: date,
-                           price_per_night: float) -> float:
+def br_04_cancellation_fee(
+    check_in: date, cancel_date: date, price_per_night: float
+) -> float:
     """BR-04: штраф 50% при отмене < 24 ч."""
     hours_before = (check_in - cancel_date).total_seconds() / 3600
     if hours_before < 24:
