@@ -1,4 +1,5 @@
 """Репозиторий проживаний."""
+
 from models.stay import Stay
 
 

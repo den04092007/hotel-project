@@ -1,4 +1,5 @@
 """Роуты для номеров."""
+
 from flask import Blueprint, jsonify
 
 bp = Blueprint("rooms", __name__, url_prefix="/rooms")

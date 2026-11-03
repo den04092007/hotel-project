@@ -1,4 +1,5 @@
 """Репозиторий бронирований."""
+
 from models.booking import Booking
 
 

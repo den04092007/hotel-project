@@ -1,4 +1,5 @@
 """Сервис бронирований."""
+
 from repositories.booking_repo import BookingRepository
 
 

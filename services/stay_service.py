@@ -1,4 +1,5 @@
 """Сервис заселения/выселения."""
+
 from repositories.stay_repo import StayRepository
 
 

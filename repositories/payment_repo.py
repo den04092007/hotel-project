@@ -1,4 +1,5 @@
 """Репозиторий платежей."""
+
 from models.payment import Payment
 
 

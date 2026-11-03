@@ -1,4 +1,5 @@
 """Тесты для бизнес-правил гостиницы."""
+
 from datetime import date, timedelta
 
 import pytest
@@ -15,17 +16,23 @@ from business_rules import (
 def test_br_01_no_overlap_returns_true_when_no_overlap():
     today = date(2026, 11, 2)
     existing = [Booking(1, 101, today, today + timedelta(days=2), 30)]
-    assert br_01_no_overlap(
-        101, today + timedelta(days=2), today + timedelta(days=4), existing
-    ) is True
+    assert (
+        br_01_no_overlap(
+            101, today + timedelta(days=2), today + timedelta(days=4), existing
+        )
+        is True
+    )
 
 
 def test_br_01_no_overlap_returns_false_when_overlap():
     today = date(2026, 11, 2)
     existing = [Booking(1, 101, today, today + timedelta(days=3), 30)]
-    assert br_01_no_overlap(
-        101, today + timedelta(days=1), today + timedelta(days=4), existing
-    ) is False
+    assert (
+        br_01_no_overlap(
+            101, today + timedelta(days=1), today + timedelta(days=4), existing
+        )
+        is False
+    )
 
 
 def test_br_03_total_cost():
