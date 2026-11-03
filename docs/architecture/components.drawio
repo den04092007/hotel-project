@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2026-11-02T00:00:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+  <diagram name="Components" id="components">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" connect="1" arrows="1" page="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" /><mxCell id="1" parent="0" />
+        <mxCell id="pkg_pres" value="Presentation (routes/)" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="300" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="r_guests" value="guests.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="pkg_pres"><mxGeometry x="20" y="40" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="r_rooms" value="rooms.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="pkg_pres"><mxGeometry x="20" y="90" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="r_bookings" value="bookings.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="pkg_pres"><mxGeometry x="20" y="140" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="r_stays" value="stays.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="pkg_pres"><mxGeometry x="20" y="190" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="r_payments" value="payments.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="pkg_pres"><mxGeometry x="20" y="240" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="r_reports" value="reports.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="pkg_pres"><mxGeometry x="20" y="290" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="pkg_app" value="Application (services/)" style="swimlane;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="40" width="300" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="s_booking" value="booking_service.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="pkg_app"><mxGeometry x="20" y="40" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="s_stay" value="stay_service.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="pkg_app"><mxGeometry x="20" y="90" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="s_pricing" value="pricing_service.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="pkg_app"><mxGeometry x="20" y="140" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="s_payment" value="payment_service.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="pkg_app"><mxGeometry x="20" y="190" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="s_report" value="report_service.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="pkg_app"><mxGeometry x="20" y="240" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="pkg_dom" value="Domain (models/)" style="swimlane;startSize=30;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="40" width="300" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="d_guest" value="Guest" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="pkg_dom"><mxGeometry x="20" y="40" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="d_room" value="Room" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="pkg_dom"><mxGeometry x="20" y="90" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="d_booking" value="Booking" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="pkg_dom"><mxGeometry x="20" y="140" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="d_stay" value="Stay" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="pkg_dom"><mxGeometry x="20" y="190" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="d_payment" value="Payment" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="pkg_dom"><mxGeometry x="20" y="240" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="d_service" value="AdditionalService" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="pkg_dom"><mxGeometry x="20" y="290" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="pkg_inf" value="Infrastructure (repositories/)" style="swimlane;startSize=30;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="500" width="300" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="rep_guest" value="guest_repo.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="pkg_inf"><mxGeometry x="20" y="40" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="rep_room" value="room_repo.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="pkg_inf"><mxGeometry x="20" y="90" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="rep_booking" value="booking_repo.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="pkg_inf"><mxGeometry x="20" y="140" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="rep_stay" value="stay_repo.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="pkg_inf"><mxGeometry x="20" y="190" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="rep_payment" value="payment_repo.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="pkg_inf"><mxGeometry x="20" y="240" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="rep_service" value="service_repo.py" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="pkg_inf"><mxGeometry x="20" y="290" width="260" height="40" as="geometry" /></mxCell>
+        <mxCell id="db" value="SQLite DB&#xa;(hotel.db)" style="shape=cylinder3;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1"><mxGeometry x="820" y="520" width="120" height="80" as="geometry" /></mxCell>
+        <mxCell id="e1" style="endArrow=open;endFill=0;strokeColor=#000000;" edge="1" parent="1" source="pkg_pres" target="pkg_app"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" style="endArrow=open;endFill=0;strokeColor=#000000;" edge="1" parent="1" source="pkg_app" target="pkg_dom"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e3" style="endArrow=open;endFill=0;strokeColor=#000000;" edge="1" parent="1" source="pkg_app" target="pkg_inf"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" style="endArrow=open;endFill=0;strokeColor=#000000;" edge="1" parent="1" source="pkg_inf" target="db"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,14 @@
+<mxfile host="app.diagrams.net" modified="2026-11-02T00:00:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+  <diagram name="Deployment" id="deployment">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" connect="1" arrows="1" page="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" /><mxCell id="1" parent="0" />
+        <mxCell id="client" value="Клиент (браузер)" style="shape=umlNode;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;size=20;" vertex="1" parent="1"><mxGeometry x="80" y="300" width="200" height="120" as="geometry" /></mxCell>
+        <mxCell id="app" value="Сервер приложения&#xa;(Flask + Python 3.10+)" style="shape=umlNode;html=1;fillColor=#d5e8d4;strokeColor=#82b366;size=20;" vertex="1" parent="1"><mxGeometry x="480" y="300" width="240" height="120" as="geometry" /></mxCell>
+        <mxCell id="db" value="Файл БД&#xa;(SQLite hotel.db)" style="shape=umlNode;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;size=20;" vertex="1" parent="1"><mxGeometry x="880" y="300" width="220" height="120" as="geometry" /></mxCell>
+        <mxCell id="c1" value="HTTP/HTTPS" style="endArrow=open;endFill=0;strokeColor=#000000;fontSize=12;" edge="1" parent="1" source="client" target="app"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="c2" value="SQL (локальный файл)" style="endArrow=open;endFill=0;strokeColor=#000000;fontSize=12;" edge="1" parent="1" source="app" target="db"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

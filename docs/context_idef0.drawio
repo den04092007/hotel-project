@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2026-11-02T00:00:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+  <diagram name="IDEF0 A-0 Гостиница" id="hotel-idef0-a0">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" connect="1" arrows="1" page="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="A0" value="A-0: Управлять гостиничным фондом" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="320" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="in1" value="Запрос гостя" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="120" y="340" as="sourcePoint" /><mxPoint x="420" y="340" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="in2" value="Данные гостя" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="120" y="370" as="sourcePoint" /><mxPoint x="420" y="370" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="in3" value="Данные номера" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="120" y="400" as="sourcePoint" /><mxPoint x="420" y="400" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="out1" value="Подтверждение брони" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="680" y="330" as="sourcePoint" /><mxPoint x="980" y="330" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="out2" value="Документ о заселении" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="680" y="360" as="sourcePoint" /><mxPoint x="980" y="360" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="out3" value="Счёт на оплату" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="680" y="390" as="sourcePoint" /><mxPoint x="980" y="390" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="out4" value="Отчёт" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="680" y="420" as="sourcePoint" /><mxPoint x="980" y="420" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl1" value="Правила гостиницы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="460" y="200" as="sourcePoint" /><mxPoint x="460" y="320" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl2" value="152-ФЗ / миграционный учёт" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="550" y="200" as="sourcePoint" /><mxPoint x="550" y="320" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl3" value="Тарифы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="640" y="200" as="sourcePoint" /><mxPoint x="640" y="320" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="mech1" value="Администратор" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="440" y="440" as="sourcePoint" /><mxPoint x="440" y="560" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="mech2" value="Система" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="530" y="440" as="sourcePoint" /><mxPoint x="530" y="560" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="mech3" value="Горничная" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="620" y="440" as="sourcePoint" /><mxPoint x="620" y="560" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="mech4" value="Платёжный терминал" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="710" y="440" as="sourcePoint" /><mxPoint x="710" y="560" as="targetPoint" /></mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
